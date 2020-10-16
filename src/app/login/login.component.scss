@@ -1,0 +1,35 @@
+mat-card {
+  width: 600px;
+}
+
+mat-form-field {
+  width: 100%;
+
+  button {
+    top: -0.1rem;
+    right: -0.2rem;
+  }
+}
+
+.flex-colum {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#login {
+  margin: .25rem 0;
+  width: 100%;
+}
+
+mat-error {
+  font-size: 12px;
+}
+
+.wrapper-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

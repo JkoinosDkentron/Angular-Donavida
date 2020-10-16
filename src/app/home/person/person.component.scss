@@ -1,0 +1,126 @@
+.mat-paginator {
+  font-size: 14px;
+}
+
+.card-header-image {
+  background: url("../../../assets/images/donante.png");
+  background-size: cover;
+}
+
+.mat-card-title, .mat-card-subtitle {
+  margin-left: -8px;
+}
+
+::ng-deep .mat-sort-header-arrow {
+  margin: 0 0 0 10px !important;
+  color: #fff;
+
+  .mat-sort-header-stem {
+    width: 0.2rem !important;
+  }
+}
+
+.mat-sort-header {
+  cursor: pointer;
+}
+
+.mat-button-disabled {
+  color: #000 !important;
+}
+
+.loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card-content {
+  margin-bottom: 0;
+}
+
+.mat-card-content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.mat-card-content::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+}
+
+.mat-card-content::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.mat-card-content::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.mat-card-content::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+.mat-card-content::-webkit-scrollbar-track:hover,
+.mat-card-content::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+.mat-card-content-table {
+  overflow: auto;
+  max-width: 100%;
+  flex: 1; //Table fixed height
+  border-bottom: 2px solid #3F51B5;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mat-header-row {
+  background: #3F51B5;
+}
+
+.mat-header-cell {
+  color: #fff;
+  font-size: 14px;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #fff;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+mat-form-field {
+
+  button {
+    top: -0.1rem;
+    right: -0.2rem;
+  }
+}
+
+table {
+  width: 100%;
+
+  tr {
+    td, th {
+      padding: 0 20px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.mat-table-sticky:first-child {
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.2), 1px 0px 1px 0px rgba(0, 0, 0, 0.14), 2px 0px 1px 0px rgba(0, 0, 0, 0.12);
+}

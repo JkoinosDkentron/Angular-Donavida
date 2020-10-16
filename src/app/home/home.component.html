@@ -1,0 +1,40 @@
+<div class="wrapper-content">
+    <mat-toolbar color="primary">
+        <span>Title Application</span>
+        <span class="spacer"></span>
+        <div class="toolbar-content">
+            <button mat-icon-button color="primary" (click)="drawer.toggle();close = !close">
+                <mat-icon>{{close ? 'close' : 'menu'}}</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar>
+    <mat-drawer-container class="sidenav-container">
+        <mat-drawer #drawer class="sidenav" mode="side" opened>
+            <button routerLink="dashboard" routerLinkActive="link-active" mat-mini-fab color="primary"
+                    matTooltipPosition="after"
+                    matTooltip="Dashboard">
+                <mat-icon>dashboard</mat-icon>
+            </button>
+            <button routerLink="persons" routerLinkActive="link-active" mat-mini-fab color="primary"
+                    matTooltipPosition="after"
+                    matTooltip="Persons">
+                <mat-icon>person</mat-icon>
+            </button>
+            <button routerLink="configuration" routerLinkActive="link-active" mat-mini-fab color="primary"
+                    matTooltipPosition="after"
+                    matTooltip="Configuration">
+                <mat-icon>settings</mat-icon>
+            </button>
+            <button (click)="logout()" mat-mini-fab color="primary"
+                    matTooltipPosition="after"
+                    matTooltip="Logout">
+                <mat-icon>meeting_room</mat-icon>
+            </button>
+        </mat-drawer>
+        <mat-drawer-content>
+            <section>
+                <router-outlet></router-outlet>
+            </section>
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>

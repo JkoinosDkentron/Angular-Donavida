@@ -1,0 +1,47 @@
+<mat-expansion-panel (opened)="panelOpenState = true"
+                     (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            ChartBar
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-chartbar class="chart-container"></app-chartbar>
+</mat-expansion-panel>
+<div class="chart-container-multi">
+    <div class="row-4">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    ChartRadar
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <app-chartradar class="chart-container"></app-chartradar>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="row-4">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    ChartCircle
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <app-chartcircle class="chart-container"></app-chartcircle>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="row-4">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    ChartRadar
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <app-chartradar class="chart-container"></app-chartradar>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
